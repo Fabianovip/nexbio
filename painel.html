@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Painel - NexBio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Painel do Criador</h1>
+
+<p>Personalize seu perfil</p>
+
+<hr>
+
+
+<h3>📸 Foto de Perfil</h3>
+
+<input
+type="file"
+id="fotoPerfil"
+accept="image/*"
+>
+
+
+<h3>🖼️ Banner</h3>
+
+<input
+type="file"
+id="bannerPerfil"
+accept="image/*"
+>
+
+
+<h3>👤 Nome</h3>
+
+<input
+type="text"
+id="nome"
+placeholder="Seu nome"
+>
+
+
+<h3>@ Usuário</h3>
+
+<input
+type="text"
+id="usuario"
+placeholder="@usuario"
+>
+
+
+<h3>📝 Biografia</h3>
+
+<textarea
+id="bio"
+placeholder="Conte um pouco sobre você..."
+style="width:100%;height:120px;padding:15px;border-radius:12px;background:#1f2937;color:white;border:none;"
+></textarea>
+
+<br><br>
+
+
+<button id="btnSalvar">
+💾 Salvar Perfil
+</button>
+
+
+<hr>
+
+
+<!-- =========================
+     ESTATÍSTICAS
+========================= -->
+
+<h2>📊 Estatísticas</h2>
+
+<div id="estatisticas">
+
+  <div class="estatisticaTotal">
+
+    <strong id="totalCliques">
+      0
+    </strong>
+
+    <span>
+      Total de cliques
+    </span>
+
+  </div>
+
+
+  <div id="listaEstatisticas"></div>
+
+</div>
+
+
+<hr>
+
+
+<!-- =========================
+     LINKS
+========================= -->
+
+<h2>🔗 Meus Links</h2>
+
+<div id="listaLinks"></div>
+
+
+<input
+type="url"
+id="youtube"
+placeholder="Link do YouTube"
+>
+
+
+<input
+type="url"
+id="kick"
+placeholder="Link da Kick"
+>
+
+
+<input
+type="url"
+id="tiktok"
+placeholder="Link do TikTok"
+>
+
+
+<input
+type="url"
+id="discord"
+placeholder="Link do Discord"
+>
+
+
+<input
+type="url"
+id="instagram"
+placeholder="Link do Instagram"
+>
+
+
+<input
+type="url"
+id="twitch"
+placeholder="Link da Twitch"
+>
+
+
+<br><br>
+
+
+<button id="btnSalvarLinks">
+💾 Salvar Links
+</button>
+
+
+<button id="btnVerPerfil">
+👤 Ver Meu Perfil Público
+</button>
+
+
+<br><br>
+
+
+<button id="btnLogout">
+🚪 Sair
+</button>
+
+
+</div>
+
+</div>
+
+
+<script
+type="module"
+src="./Painel.js">
+</script>
+
+</body>
+
+</html>

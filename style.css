@@ -1,0 +1,787 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #172554,
+      #080d1c 60%
+    );
+
+  color: white;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 25px 12px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+  width: 100%;
+  max-width: 520px;
+
+  background: #111827;
+
+  border-radius: 26px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 60px
+    rgba(0, 0, 0, 0.55);
+
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+
+  width: 100%;
+  height: 190px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.fotoPerfil {
+
+  width: 125px;
+  height: 125px;
+
+  margin:
+    -62px auto 12px;
+
+  padding: 5px;
+
+  position: relative;
+
+  border-radius: 50%;
+
+  background: #111827;
+
+  box-shadow:
+    0 5px 25px
+    rgba(0, 0, 0, 0.45);
+
+}
+
+
+.fotoPerfil img {
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  background: #1f2937;
+
+}
+
+
+/* =========================
+   NOME
+========================= */
+
+#nomePerfil {
+
+  margin:
+    8px 20px 4px;
+
+  font-size: 30px;
+
+  font-weight: 800;
+
+}
+
+
+/* =========================
+   USUÁRIO
+========================= */
+
+#usuarioPerfil {
+
+  margin: 0;
+
+  color: #9ca3af;
+
+  font-size: 16px;
+
+}
+
+
+/* =========================
+   BIO
+========================= */
+
+#bioPerfil {
+
+  margin:
+    18px 25px 22px;
+
+  color: #d1d5db;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+}
+
+
+/* =========================
+   DIVISÓRIA
+========================= */
+
+hr {
+
+  border: 0;
+
+  height: 1px;
+
+  background: #263244;
+
+  margin:
+    20px 25px;
+
+}
+
+
+/* =========================
+   TÍTULO LINKS
+========================= */
+
+h2 {
+
+  margin:
+    22px 20px;
+
+  font-size: 23px;
+
+  font-weight: 800;
+
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+#listaLinks {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+  padding:
+    0 20px 30px;
+
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+#listaLinks .link {
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 100%;
+
+  min-height: 58px;
+
+  padding:
+    15px 55px 15px 55px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1f2937,
+      #273449
+    );
+
+  border:
+    1px solid
+    rgba(255,255,255,0.06);
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+
+}
+
+
+/* Efeito ao tocar */
+
+#listaLinks .link:active {
+
+  transform:
+    scale(0.97);
+
+}
+
+
+/* Efeito no navegador */
+
+#listaLinks .link:hover {
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 8px 25px
+    rgba(0,0,0,0.3);
+
+}
+
+
+/* =========================
+   ÍCONES
+========================= */
+
+#listaLinks .link::before {
+
+  position: absolute;
+
+  left: 20px;
+
+  font-size: 24px;
+
+}
+
+
+/* YouTube */
+
+#listaLinks .link[href*="youtube"]::before {
+
+  content: "▶️";
+
+}
+
+
+/* TikTok */
+
+#listaLinks .link[href*="tiktok"]::before {
+
+  content: "🎵";
+
+}
+
+
+/* Kick */
+
+#listaLinks .link[href*="kick"]::before {
+
+  content: "💚";
+
+}
+
+
+/* Discord */
+
+#listaLinks .link[href*="discord"]::before {
+
+  content: "💬";
+
+}
+
+
+/* Instagram */
+
+#listaLinks .link[href*="instagram"]::before {
+
+  content: "📷";
+
+}
+
+
+/* Twitch */
+
+#listaLinks .link[href*="twitch"]::before {
+
+  content: "🎮";
+
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 600px) {
+
+  .container {
+
+    padding:
+      15px 10px;
+
+  }
+
+
+  .card {
+
+    border-radius: 22px;
+
+  }
+
+
+  .banner {
+
+    height: 175px;
+
+  }
+
+
+  .fotoPerfil {
+
+    width: 110px;
+    height: 110px;
+
+    margin-top:
+      -55px;
+
+  }
+
+
+  #nomePerfil {
+
+    font-size: 27px;
+
+  }
+
+
+  #bioPerfil {
+
+    font-size: 16px;
+
+  }
+
+
+  #listaLinks .link {
+
+    min-height: 56px;
+
+    font-size: 16px;
+
+  }
+
+}
+
+#estatisticas {
+  margin: 20px 0;
+}
+
+.estatisticaTotal {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.estatisticaTotal strong {
+  display: block;
+  font-size: 36px;
+}
+
+.estatisticaTotal span {
+  display: block;
+  margin-top: 5px;
+  color: #e5e7eb;
+}
+
+.estatisticaItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1f2937;
+  padding: 15px 18px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+}
+
+.estatisticaItem span {
+  font-weight: 600;
+}
+
+.estatisticaItem strong {
+  font-size: 20px;
+}
+
+/* =========================
+   PAINEL DO CRIADOR
+========================= */
+
+.card h1 {
+  font-size: 32px;
+  margin: 30px 20px 10px;
+}
+
+.card > p {
+  color: #d1d5db;
+  font-size: 17px;
+}
+
+
+/* =========================
+   TÍTULOS DO PAINEL
+========================= */
+
+.card h3 {
+  margin: 25px 20px 12px;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  color: #f9fafb;
+}
+
+
+/* =========================
+   CAMPOS DE TEXTO
+========================= */
+
+.card input[type="text"],
+.card input[type="url"],
+.card textarea {
+
+  width: calc(100% - 40px);
+
+  margin: 0 20px 8px;
+
+  padding: 15px 16px;
+
+  border: 1px solid #374151;
+
+  border-radius: 14px;
+
+  background: #1f2937;
+
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+/* Placeholder */
+
+.card input::placeholder,
+.card textarea::placeholder {
+
+  color: #9ca3af;
+
+}
+
+
+/* Quando clicar */
+
+.card input:focus,
+.card textarea:focus {
+
+  border-color: #6366f1;
+
+  background: #273449;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(99, 102, 241, 0.18);
+
+}
+
+
+/* =========================
+   BIOGRAFIA
+========================= */
+
+.card textarea {
+
+  min-height: 120px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+
+}
+
+
+/* =========================
+   ESCOLHER ARQUIVO
+========================= */
+
+.card input[type="file"] {
+
+  width: calc(100% - 40px);
+
+  margin:
+    0 20px 15px;
+
+  padding: 10px;
+
+  border-radius: 14px;
+
+  background: #1f2937;
+
+  color: #d1d5db;
+
+  border: 1px solid #374151;
+
+  font-size: 14px;
+
+}
+
+
+/* Botão interno do arquivo */
+
+.card input[type="file"]::file-selector-button {
+
+  margin-right: 10px;
+
+  padding:
+    10px 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+/* =========================
+   BOTÕES DO PAINEL
+========================= */
+
+.card button {
+
+  border: none;
+
+  border-radius: 14px;
+
+  padding:
+    14px 20px;
+
+  margin:
+    6px 5px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 18px
+    rgba(37, 99, 235, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+/* Toque no botão */
+
+.card button:active {
+
+  transform:
+    scale(0.96);
+
+}
+
+
+/* Passar o dedo/mouse */
+
+.card button:hover {
+
+  filter: brightness(1.1);
+
+  box-shadow:
+    0 8px 24px
+    rgba(37, 99, 235, 0.35);
+
+}
+
+
+/* =========================
+   BOTÃO VER PERFIL
+========================= */
+
+#btnVerPerfil {
+
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #9333ea
+    );
+
+}
+
+
+/* =========================
+   BOTÃO SAIR
+========================= */
+
+#btnLogout {
+
+  background:
+    linear-gradient(
+      135deg,
+      #374151,
+      #1f2937
+    );
+
+  box-shadow: none;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .card h1 {
+
+    font-size: 29px;
+
+  }
+
+  .card h3 {
+
+    font-size: 19px;
+
+  }
+
+  .card input[type="text"],
+  .card input[type="url"],
+  .card textarea {
+
+    width:
+      calc(100% - 30px);
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  .card input[type="file"] {
+
+    width:
+      calc(100% - 30px);
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  .card button {
+
+    font-size: 15px;
+
+    padding:
+      13px 16px;
+
+  }
+
+}
